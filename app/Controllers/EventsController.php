@@ -9,6 +9,6 @@ class EventsController extends BaseController
 {
     public function index()
     {
-        //
+        return view('events/index', ['title' => 'Events']);
     }
 }

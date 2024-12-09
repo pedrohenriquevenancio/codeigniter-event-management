@@ -5,4 +5,8 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'HomeController::index');
+
+$routes->group('events', function ($routes) {
+    $routes->get('/', 'EventsController::index');
+});
